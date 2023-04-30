@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export interface ITask {
     id: number;
     name?: string;
@@ -13,7 +12,6 @@ export interface ITask {
 
 export interface ITaskFormProps {
     task: ITask;
-    teams: string[];
     teams: string[];
     onChangeInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onChangeSelect: (e: React.ChangeEvent<HTMLSelectElement>) => void;

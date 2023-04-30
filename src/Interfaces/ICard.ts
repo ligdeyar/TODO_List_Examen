@@ -1,7 +1,7 @@
-import {ITask} from './ITask';
+import { ITask } from "./ITask";
 
-export interface Icard {
+export interface ICard {
     task: ITask;
-    changeStatus: (id: number ,status: string) => void;
-    deleteTask: (id: number) =>void;
+    changeStatus: (id: number, status: string) => void;
+    deleteTask: (id: number) => void;
 }

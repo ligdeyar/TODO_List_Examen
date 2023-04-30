@@ -1,5 +1,5 @@
 import { useState , useEffect } from 'react';
-import { ITask, ITaskFormProps } from '../Interfaces/ITask'
+import { ITask, ITaskFormProps } from '../interfaces/ITask'
 
 function TaskForm(props: ITaskFormProps) {
 
@@ -45,6 +45,7 @@ function TaskForm(props: ITaskFormProps) {
   
     return (        
         <form>
+            
             <table>
                 <tr>
                     <td> <label htmlFor="taskName">Tarea</label> </td>

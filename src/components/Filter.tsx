@@ -1,7 +1,7 @@
 import { useState ,useEffect } from "react";
-import { ITask, IFilterprops } from "../Interfaces/ITask";
+import { ITask, ITaskFormProps } from "../interfaces/ITask";
 
-function Filter(props: IFilterprops){
+function Filter(props: ITaskFormProps){
     return(
         <div className="filtros">
         <h2>Filtros</h2>
