@@ -6,9 +6,12 @@ import { ITask } from './interfaces/ITask'
 import TaskForm from './components/TaskForm'
 import Panel from './components/Panel'
 import CrearPanel from './components/CrearPanel';
+import Crear from './components/CrearPanel';
+import { ITaskFormProps } from './interfaces/ITask';
+import { IPanelProps } from './interfaces/IPanel';
 
 
-function App() {
+function App(props: IPanelProps) {
 
   const [id, setId] = useState<number>(0)
   const [task, setTask] = useState<ITask>({ "status" : "TODO", "id": 0 })
@@ -78,7 +81,7 @@ function App() {
             />
 
         <CrearPanel
-            title={"task."} 
+            title={ props.title} 
             tasks={ taskList.filter( task => task.status === 'TODO' ) }
             changeStatus={changeStatus}
             deleteTask={deleteTask}/> 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ICard } from '../interfaces/ICard';
+import Crear from './CrearPanel';
 
 function Card(props: ICard){
 
@@ -38,6 +39,7 @@ function Card(props: ICard){
                 <p>
                 <select value={status} onChange={handleSelectChange} name="estado">                    
                     <option value="TODO">TODO</option>
+                    
                     <option value="In Progress">In Progress</option>
                     <option value="Completed">Completed</option>
                 </select>
